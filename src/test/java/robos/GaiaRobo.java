@@ -10,8 +10,8 @@ public class GaiaRobo {
 
     private ChromeDriver roboDriver;
 
-    public void abrirChrome() {
-
+    public GaiaRobo() {
+        //O que estiver aqui sera executado no new
         ChromeOptions option = new ChromeOptions();
         option.addArguments("--remote-allow-origins=*");
 
@@ -24,6 +24,10 @@ public class GaiaRobo {
     }
 
     public void fazerLogin() {
+
+    }
+
+    public void lancarNota() {
 
     }
 
