@@ -8,17 +8,22 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class GaiaRobo {
 
+    public ChromeDriver roboDriver;
+
     public void abrirChrome() {
 
         ChromeOptions option = new ChromeOptions();
         option.addArguments("--remote-allow-origins=*");
 
         WebDriverManager.chromedriver().setup();
-        ChromeDriver julioDriver = new ChromeDriver(option);
+        roboDriver = new ChromeDriver(option);
+    }
 
+    public void acessarSite() {
+        roboDriver.get("http://www.juliodelima.com.br/taskit/");
+    }
 
-        julioDriver.get("http://www.juliodelima.com.br/taskit/");
-
+    public void fazerLogin() {
 
     }
 
