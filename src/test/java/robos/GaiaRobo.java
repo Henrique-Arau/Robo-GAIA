@@ -19,11 +19,11 @@ public class GaiaRobo {
         roboDriver = new ChromeDriver(option);
     }
 
-    public void acessarSite() {
-        roboDriver.get("http://www.juliodelima.com.br/taskit/");
-    }
+    public void acessarUmSiteChamado(String url) {
 
-    public void fazerLogin() {
+        roboDriver.get(url);
+    }
+    public void fazerLogin(String login, String senha) {
 
     }
 
