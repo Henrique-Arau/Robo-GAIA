@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class GaiaRobo {
 
-    public ChromeDriver roboDriver;
+    private ChromeDriver roboDriver;
 
     public void abrirChrome() {
 
