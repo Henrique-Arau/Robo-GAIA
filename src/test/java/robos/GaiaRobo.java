@@ -23,6 +23,10 @@ public class GaiaRobo {
 
         roboDriver.get(url);
     }
+
+    public String pegarOTituloDaPagina() {
+        return roboDriver.getTitle();
+    }
     public void fazerLogin(String login, String senha) {
 
     }
